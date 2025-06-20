@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Songless - Adivina la Canción Latina",
+  title: "LatinLess - Adivina la canción",
   description:
-    "Juego para adivinar canciones latinas con intentos progresivos. Escucha fragmentos de música y adivina el artista o la canción.",
+    "El juego para adivinar canciones latinas con solo unos segundos de audio.",
 };
 
 export default function RootLayout({

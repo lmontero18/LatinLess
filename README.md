@@ -1,22 +1,14 @@
-# 🎵 Songless - Adivina la Canción Latina
+# LatinLess
 
-Un juego interactivo para adivinar canciones latinas con intentos progresivos. Escucha fragmentos de música y adivina el artista o la canción.
+LatinLess es un juego web para adivinar canciones latinas, construido con Next.js, React, TypeScript y TailwindCSS. Los jugadores escuchan fragmentos de canciones cada vez más largos y deben adivinar el título o el artista.
 
-## 🎮 Cómo Jugar
+## Cómo Jugar
 
-1. **Escucha la música**: Usa los botones para reproducir fragmentos de la canción
-
-   - 1 segundo (primer intento)
-   - 3 segundos (segundo intento)
-   - 5 segundos (tercer intento)
-   - 7 segundos (cuarto intento)
-   - 10 segundos (último intento)
-
-2. **Adivina**: Escribe el nombre del artista o el título de la canción
-3. **Opciones adicionales**:
-   - Usa el botón "Skip" para saltar a la siguiente duración
-   - Usa "Show Answer" para revelar la respuesta en cualquier momento
-4. **Gana**: Si aciertas, ¡felicitaciones! Si fallas 5 veces, se revela la canción
+1.  Visita la página del juego.
+2.  Presiona el botón de play para escuchar el primer segundo de una canción.
+3.  Escribe tu respuesta (título o artista) en el campo de texto.
+4.  Si no aciertas, puedes escuchar un fragmento más largo.
+5.  Tienes 5 intentos para adivinar la canción.
 
 ## ✨ Características
 
