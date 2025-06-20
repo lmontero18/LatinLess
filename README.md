@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎵 Songless - Adivina la Canción Latina
 
-## Getting Started
+Un juego interactivo para adivinar canciones latinas con intentos progresivos. Escucha fragmentos de música y adivina el artista o la canción.
 
-First, run the development server:
+## 🎮 Cómo Jugar
+
+1. **Escucha la música**: Usa los botones para reproducir fragmentos de la canción
+
+   - 1 segundo (primer intento)
+   - 3 segundos (segundo intento)
+   - 5 segundos (tercer intento)
+   - 7 segundos (cuarto intento)
+   - 10 segundos (último intento)
+
+2. **Adivina**: Escribe el nombre del artista o el título de la canción
+3. **Opciones adicionales**:
+   - Usa el botón "Skip" para saltar a la siguiente duración
+   - Usa "Show Answer" para revelar la respuesta en cualquier momento
+4. **Gana**: Si aciertas, ¡felicitaciones! Si fallas 5 veces, se revela la canción
+
+## ✨ Características
+
+- 🎵 **Reproducción de audio**: Fragmentos de hasta 10 segundos de canciones latinas
+- 🎨 **Diseño moderno**: Interfaz elegante con fondo negro y efectos visuales
+- 📱 **Responsive**: Se adapta perfectamente a móviles y tablets
+- 🎭 **Animaciones**: Transiciones suaves con Framer Motion
+- 🎯 **5 intentos progresivos**: Cada intento te da más tiempo para escuchar (1s, 3s, 5s, 7s, 10s)
+- 🏆 **Sistema de puntuación**: Visualización de intentos restantes
+- ⏭️ **Botón Skip**: Salta directamente a la siguiente duración de audio
+- 👁️ **Show Answer**: Revela la respuesta en cualquier momento
+- 🔍 **Autocompletado**: Sugerencias inteligentes mientras escribes
+- 🎯 **Validación flexible**: Acepta nombres aproximados de artistas y canciones
+
+## 🛠️ Tecnologías
+
+- **Next.js 15** con App Router
+- **React 19** con hooks modernos
+- **TypeScript** para type safety
+- **TailwindCSS** para estilos
+- **Framer Motion** para animaciones
+- **API de Deezer** para obtener canciones
+
+## 🚀 Instalación
 
 ```bash
+# Clonar el repositorio
+git clone <tu-repositorio>
+cd latin-songless
+
+# Instalar dependencias
+npm install
+
+# Ejecutar en desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Construir para producción
+npm run build
+
+# Ejecutar en producción
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎵 API de Música
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+La aplicación utiliza la API pública de Deezer para obtener canciones latinas de artistas populares como:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Eladio Carrión
+- Bad Bunny
+- J Balvin
+- Maluma
+- Ozuna
+- Y muchos más...
 
-## Learn More
+## 🎨 Diseño
 
-To learn more about Next.js, take a look at the following resources:
+- **Fondo**: Gradiente negro con efectos de blur
+- **Colores**: Blanco para texto, azul/verde para botones
+- **Efectos**: Hover animations y transiciones suaves
+- **Tipografía**: Inter font para mejor legibilidad
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📱 Responsive Design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+La aplicación está optimizada para:
 
-## Deploy on Vercel
+- 📱 Móviles (320px+)
+- 📱 Tablets (768px+)
+- 💻 Desktop (1024px+)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎯 Funcionalidades
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- ✅ Reproducción de audio con controles de duración
+- ✅ Sistema de intentos progresivos
+- ✅ Validación de respuestas (artista o canción)
+- ✅ Historial de intentos
+- ✅ Pantallas de victoria/derrota
+- ✅ Botón para jugar de nuevo
+- ✅ Soporte para teclado (Enter para adivinar)
+- ✅ Loading states y manejo de errores
+
+## 🔧 Configuración
+
+La aplicación funciona completamente en el frontend sin necesidad de backend. Los datos de las canciones se obtienen de la API de Deezer a través de proxies públicos para evitar problemas de CORS.
+
+## 📄 Licencia
+
+Este proyecto es de código abierto y está disponible bajo la licencia MIT.
+
+---
+
+¡Disfruta adivinando canciones latinas! 🎵🇪🇸
